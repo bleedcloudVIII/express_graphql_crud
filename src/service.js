@@ -24,6 +24,11 @@ module.exports = class UserService {
         const user = User.findOne({where: {id: obj.id}});
         return user;
     }
+
+    deleteUser = async (obj) => {
+        await User.destroy({where: {id: obj.id}});
+        return obj;
+    }
 }
 
 

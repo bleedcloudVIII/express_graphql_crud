@@ -21,6 +21,9 @@ const root = {
     },
     updateUser: ({ input }) => {
         return userService.updateUser(input);
+    },
+    deleteUser: ({ input }) => { // Костыльное удаление
+        return userService.deleteUser(input);
     }
 }
 

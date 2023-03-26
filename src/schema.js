@@ -24,6 +24,7 @@ const schema = buildSchema(`
     type Mutation {
         createUser(input: UserInput): User
         updateUser(input: UserInput): User
+        deleteUser(input: UserInput): User
     }
 `);
 
